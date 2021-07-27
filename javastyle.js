@@ -8,6 +8,10 @@ function gridcreation () {
 let start = Number(document.getElementById("createboard").elements[0].value)
 
 let newtile = document.querySelector('.boxbody')
+let y = newtile.children
+
+
+removeold(y)
 
 
 
@@ -18,10 +22,6 @@ let newtile = document.querySelector('.boxbody')
    
    
 }
-
-
-
-let y = newtile.children
 
 
 
@@ -41,8 +41,7 @@ let y = newtile.children
     z.classList.add('cell')
      let gridrowheight = newtile.offsetHeight - 6;
      z.style.height = gridrowheight / start
-     z.style.backgroundColor = "red"
-     
+  
    
     
        
@@ -73,15 +72,16 @@ let y = newtile.children
 
 
 }
-function onmousehold(event) {
-    return true
-}
-removeold()
 
-function removeold() {
-    let x = document.querySelectorAll('gridstyle')
-    console.log(x)
-    
-    
+
+function removeold(y) {
+    let x = document.getElementById('divcreator')
+
+   console.log(x.firstChild)
+
+   while(x.firstChild) {
+       x.removeChild(x.firstChild)
+   }
+    console.log(x.firstChild)
     //applies a class of click down and triggers another function
 }

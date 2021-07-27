@@ -6,7 +6,12 @@
     </head>
     <title>A Etch a Sketch Project</title>
     <header class = "pagetitle">Etch A Sketch</header>
-    <form id = "createboard" class = "createboard"></form>
+    <form id = "createboard" class = "createboard">
+      <label for="initialization" class = "prompttext">Enter a number between 2 and 16</label><br>
+      <input type = "number" min = "2" max = "16" id = "initialization" >
+      <button type = "button" onclick="gridcreation()" id = "grid" >Create Grid</button>
+
+    </form>
     <body>
       <div id = "divcreator" class = "boxbody">
       </div>

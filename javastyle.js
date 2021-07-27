@@ -59,7 +59,7 @@ removeold(y)
    
     for (i = 0; i <= start -1; i++) {
        let cellitems = y.item(i).children
-       console.log(cellitems)
+      
   for (b =0; b <= cellitems.length - 1; b++) {
       let z = cellitems.item(b)
       z.addEventListener( "mouseover", function onmousehold(){ z.style.backgroundColor = "purple"

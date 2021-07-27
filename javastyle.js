@@ -41,8 +41,7 @@ removeold(y)
     z.classList.add('cell')
      let gridrowheight = newtile.offsetHeight - 6;
      z.style.height = gridrowheight / start
-     z.style.backgroundColor = "red"
-     
+  
    
     
        

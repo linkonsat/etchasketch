@@ -5,13 +5,14 @@
     width: 300px;
     display: grid;
    
-    margin-left: 33%;
+    margin-left: 40%;
 }
 
 .pagetitle {
     padding-top: 25px;
    font-size: 50;
     text-align: center;
+    margin-right: 40px;
 }
 
 .divcreator {
